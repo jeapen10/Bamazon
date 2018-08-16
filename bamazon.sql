@@ -24,3 +24,5 @@ VALUES (1, 'Wilson Evolution Indoor Basketball', 'Sports and Fitness', 48.64, 20
        (8, 'Keuring K-Select Coffee Maker', 'Kitchen and Dining', 129.99, 25),
        (9, 'Elite Basketball Socks (5-pack)', 'Sports-Clothing', 22.98, 400),
        (10, 'Fossil Mens The Minimalist (watch)', 'Clothing-watches', 75.99, 15);
+
+SELECT * FROM bamazonDB.products;

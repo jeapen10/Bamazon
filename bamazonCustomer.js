@@ -17,13 +17,12 @@ connection.connect(function (err) {
 
 var start = function getProducts() {
     connection.query('SELECT * FROM products', function (err, result) {
-        if (err) throw err;
         console.log('Items in Store');
         console.log('=================================================');
 
-        result.forEach(function (item) {
-            console.log('Item ID: ' + result[i].id + ' Product: ' + result[i].productName + ' Department: ' + result[i].departmentName + ' Price: ' + '$' + result[i].price + ' Quantity left: ' + result[i].stockQuantity)
-        }
+        result.forEach(function(item) {
+            console.log('Item ID: ' + item.id + ' Product: ' + item.productName + ' Department: ' + item.departmentName + ' Price: ' + '$' + item.price + ' Quantity left: ' + item.stockQuantity)
+        })
 		console.log('=================================================');
         orderItem();
     })
